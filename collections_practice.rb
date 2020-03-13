@@ -43,18 +43,12 @@ def sum_array(array)
   array.inject(0){|sum,x| sum + x }
 end
 
-#def add_s(array)
-#  array.each_with_index do |exclamation, element|
-#    exclamation << "s" unless element==1
-#  end
-#end
-  
 def add_s(array)
-  array.each_with_index.collect do |exclamation, element|
-    next element if to_skip.include?(element)
-    element + "s"
+  array.each_with_index do |exclamation, element|
+    exclamation << "s" unless element==1
   end
 end
+  
 
 
   
