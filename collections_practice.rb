@@ -44,8 +44,8 @@ def sum_array(array)
 end
 
 def add_s(array)
-  array.each_with_index do |exclamation|
-    exclamation << "s" unless [2]
+  array.each_with_index do |exclamation, element|
+    exclamation << "s" unless element = 2
   end
 end
   
