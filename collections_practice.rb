@@ -51,7 +51,7 @@ end
   
 def add_s(array)
   array.each_with_index.collect do |exclamation, element|
-    next element if to_skip.include?(index)
+    next element if to_skip.include?(element)
     element + "s"
   end
 end
