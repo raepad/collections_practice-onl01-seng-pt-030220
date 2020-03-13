@@ -45,7 +45,9 @@ end
 
 def add_s(array)
   array.each do |exclamation|
-    exclamation << "s" unless index[2]
+    exclamation << "s" unless index == 2 
+  end
+end
   
   
   
